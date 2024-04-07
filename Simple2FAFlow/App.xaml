@@ -4,6 +4,14 @@
              xmlns:local="clr-namespace:Simple2FAFlow"
              StartupUri="MainWindow.xaml">
     <Application.Resources>
-         
+
+        <!--Radio button style-->
+            <Style x:Key="CommonRadioButtonStyle" TargetType="RadioButton">
+            <Setter Property="Margin" Value="20, 30, 20, 10"/>
+            <Setter Property="FontSize" Value="16"/>
+        </Style>
+
+
+        <!--Button style-->
     </Application.Resources>
 </Application>

@@ -13,13 +13,32 @@
             <RowDefinition Height="50"/>
         </Grid.RowDefinitions>
 
-        <StackPanel Grid.Row="1">
+
+        <StackPanel Grid.Row="0"
+                    Background="#fff0de"
+                    Orientation="Horizontal">
+            <Button Content="back"/>
+
+            <Label Content="Validate 2FA"
+                   FontSize="16"
+                   Margin="10"/>
         </StackPanel>
+
+
+        <StackPanel Grid.Row="1">
+            <RadioButton Style="{StaticResource CommonRadioButtonStyle}"
+             Content="Google Authenticator">
+            </RadioButton>
+
+            <RadioButton Style="{StaticResource CommonRadioButtonStyle}"
+              Content="Microsoft Authenticator">
+            </RadioButton>
+        </StackPanel>
+
 
         <StackPanel Grid.Row="2">
-        </StackPanel>
-
-        <StackPanel Grid.Row="3">
+            <Button Content="Next"
+                    Width='100'/>
         </StackPanel>
     </Grid>
 </Window>
