@@ -41,7 +41,8 @@
         <StackPanel Grid.Row="2">
             <Button Content="Next"
                     Width='100'
-                    Command="{Binding ValidationCommand}"/>
+                    Command="{Binding ValidationCommand}"
+                    Visibility="{Binding IsButtonVisible}"/>
         </StackPanel>
     </Grid>
 </Window>
