@@ -13,9 +13,4 @@
     <Content Include="Icon\icon.ico" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="MVVM\ViewModels\" />
-    <Folder Include="MVVM\Views\" />
-  </ItemGroup>
-
 </Project>

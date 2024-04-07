@@ -3,7 +3,7 @@ using System.Runtime.CompilerServices;
 
 namespace Simple2FAFlow.Core
 {
-    internal class ObservableObject : INotifyPropertyChanged
+    public class ViewModelBase : INotifyPropertyChanged
     {
         public event PropertyChangedEventHandler? PropertyChanged;
 

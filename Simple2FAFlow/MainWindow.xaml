@@ -3,9 +3,14 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:Simple2FAFlow"
+        xmlns:vm="clr-namespace:Simple2FAFlow.ViewModel"
         mc:Ignorable="d"
         Title="MiniOrange Form" Height="300" Width="380">
+
+    <Window.DataContext>
+        <vm:NavigationVM/>
+    </Window.DataContext>
+
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="50"/>
@@ -26,19 +31,17 @@
 
 
         <StackPanel Grid.Row="1">
-            <RadioButton Style="{StaticResource CommonRadioButtonStyle}"
-             Content="Google Authenticator">
-            </RadioButton>
 
-            <RadioButton Style="{StaticResource CommonRadioButtonStyle}"
-              Content="Microsoft Authenticator">
-            </RadioButton>
+            <ContentControl x:Name="pages"
+                            Content="{Binding CurrentView}"/>
+
         </StackPanel>
 
 
         <StackPanel Grid.Row="2">
             <Button Content="Next"
-                    Width='100'/>
+                    Width='100'
+                    Command="{Binding ValidationCommand}"/>
         </StackPanel>
     </Grid>
 </Window>

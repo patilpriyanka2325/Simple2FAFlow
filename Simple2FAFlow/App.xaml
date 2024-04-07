@@ -5,13 +5,19 @@
              StartupUri="MainWindow.xaml">
     <Application.Resources>
 
-        <!--Radio button style-->
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="Core/DataTemplate.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+
+            <!--Radio button style-->
             <Style x:Key="CommonRadioButtonStyle" TargetType="RadioButton">
-            <Setter Property="Margin" Value="20, 30, 20, 10"/>
-            <Setter Property="FontSize" Value="16"/>
-        </Style>
+                <Setter Property="Margin" Value="20, 30, 20, 10"/>
+                <Setter Property="FontSize" Value="16"/>
+            </Style>
 
 
-        <!--Button style-->
+            <!--Button style-->
+        </ResourceDictionary>
     </Application.Resources>
 </Application>
