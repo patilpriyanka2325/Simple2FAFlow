@@ -14,16 +14,16 @@
 
     <Grid>
         <StackPanel Orientation="Horizontal"
-        VerticalAlignment="Center"
-        HorizontalAlignment="Center">
-            <Label Width="100"
-       Height="30"
-       Margin="20"
-       Content="OTP : "/>
+                    Margin="50">
+            
+            <Label Height="30"
+                   Margin="20"
+                   Content="OTP : "/>
 
             <TextBox Width="150" 
-         Height="30"
-         Margin="20"/>
+                    Height="30"
+                    Margin="20"/>
+            
         </StackPanel>
     </Grid>
 </UserControl>
