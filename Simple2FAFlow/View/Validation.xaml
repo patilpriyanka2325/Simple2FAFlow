@@ -14,7 +14,7 @@
 
     <Grid>
         <StackPanel Orientation="Horizontal"
-                    Margin="50">
+                    Margin="45">
             
             <Label Height="30"
                    Margin="20"
@@ -23,7 +23,13 @@
             <TextBox Width="150" 
                     Height="30"
                     Margin="20"/>
-            
+
+        </StackPanel>
+
+        <StackPanel VerticalAlignment="Bottom">
+            <Button Height="30"
+                    Width="100"
+                Content="Validate"/>
         </StackPanel>
     </Grid>
 </UserControl>
