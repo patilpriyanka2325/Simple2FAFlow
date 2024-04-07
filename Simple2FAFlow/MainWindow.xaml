@@ -5,8 +5,12 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Simple2FAFlow"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MiniOrange Form" Height="300" Width="380">
     <Grid>
-
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50"/>
+            <RowDefinition/>
+            <RowDefinition Height="50"/>
+        </Grid.RowDefinitions>
     </Grid>
 </Window>
