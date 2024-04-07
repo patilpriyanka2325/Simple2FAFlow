@@ -12,5 +12,14 @@
             <RowDefinition/>
             <RowDefinition Height="50"/>
         </Grid.RowDefinitions>
+
+        <StackPanel Grid.Row="1">
+        </StackPanel>
+
+        <StackPanel Grid.Row="2">
+        </StackPanel>
+
+        <StackPanel Grid.Row="3">
+        </StackPanel>
     </Grid>
 </Window>
