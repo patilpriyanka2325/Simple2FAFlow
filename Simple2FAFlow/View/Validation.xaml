@@ -13,23 +13,34 @@
     </UserControl.DataContext>
 
     <Grid>
-        <StackPanel Orientation="Horizontal"
-                    Margin="45">
-            
-            <Label Height="30"
+
+        <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition Height="50"/>
+        </Grid.RowDefinitions>
+
+
+        <StackPanel Orientation="Vertical"
+                    Margin="10">
+            <StackPanel Grid.Row="0"
+                        Orientation="Horizontal"
+                        VerticalAlignment="Center"
+                        Margin="0, 30, 0,10">
+
+                <Label Height="30"
                    Margin="20"
                    Content="OTP : "/>
 
-            <TextBox Width="150" 
+                <TextBox Width="150" 
                     Height="30"
                     Margin="20"/>
 
-        </StackPanel>
+            </StackPanel>
 
-        <StackPanel VerticalAlignment="Bottom">
-            <Button Height="30"
-                    Width="100"
-                Content="Validate"/>
+            <StackPanel Grid.Row="1"
+            VerticalAlignment="Bottom">
+                <Button Style="{StaticResource validateButtonStyle}"/>
+            </StackPanel>
         </StackPanel>
     </Grid>
 </UserControl>
