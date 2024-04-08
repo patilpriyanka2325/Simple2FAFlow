@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:vm="clr-namespace:Simple2FAFlow.ViewModel"
         mc:Ignorable="d"
-        Title="MiniOrange Form" Height="300" Width="380">
+        Title="MiniOrange Form" Height="330" Width="380">
 
     <Window.DataContext>
         <vm:NavigationVM/>
@@ -13,7 +13,7 @@
 
     <Grid>
         <Grid.RowDefinitions>
-            <RowDefinition Height="50"/>
+            <RowDefinition Height="55"/>
             <RowDefinition/>
             <RowDefinition Height="50"/>
         </Grid.RowDefinitions>
@@ -21,8 +21,27 @@
 
         <StackPanel Grid.Row="0"
                     Background="#fff0de"
-                    Orientation="Horizontal">
-            <Button Content="back"/>
+                    Orientation="Horizontal"
+                    Margin="2,2,0,0">
+            <!--<Button Content="back"/>-->
+            <Button Width="32"
+                    Margin="0,0,0,8">
+                <!--<Path Stroke="Black" Data="M 10 0 L 16 4 L 10 8 M 0 4 L 16 4" />-->
+                <Path Stroke="Black"
+                      StrokeThickness="2"
+                      Data="M 7 0 L 0 5 L 7 10 M 0 5 L 19 5" />
+
+                <!--<Path Stretch="Fill" Fill="Black" 
+          Data="M 0,110 70,110 45,90 75,90 120,120 75,150 45,150 70,130 0,130 Z"
+          HorizontalAlignment="Right"  Width="30" Height="24" Margin="0,0,2,0"
+          RenderTransformOrigin=".5,.5">
+                    <Path.RenderTransform>
+                        <RotateTransform Angle="180" />
+                    </Path.RenderTransform>
+                </Path>-->
+                
+                
+            </Button>
 
             <Label Content="Validate 2FA"
                    FontSize="16"
