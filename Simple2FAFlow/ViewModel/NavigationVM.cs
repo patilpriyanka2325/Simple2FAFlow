@@ -31,14 +31,18 @@ namespace Simple2FAFlow.ViewModel
 
         public ICommand HomeCommand { get; set; }
         public ICommand ValidationCommand { get; set; }
+        public ICommand BackCommand { get; set; }
+
 
         private void Home(object obj) => CurrentView = new HomeVM();
         private void Validation(object obj) => CurrentView = new ValidationVM();
+        private void Back(object obj) => CurrentView = new HomeVM();
 
         public NavigationVM()
         {
             HomeCommand = new RelayCommand(Home);
             ValidationCommand = new RelayCommand(Validation);
+            BackCommand = new RelayCommand(Back);
 
             CurrentView = new HomeVM();
         }

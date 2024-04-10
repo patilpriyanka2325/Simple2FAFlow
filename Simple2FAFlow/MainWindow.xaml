@@ -24,7 +24,8 @@
                     Orientation="Horizontal"
                     Margin="2,2,0,0">
 
-            <Button Style="{StaticResource BackButton}">
+            <Button Style="{StaticResource BackButton}"
+                    Command="{Binding BackCommand}">
 
                 <Path Stroke="Black"
                       StrokeThickness="2"
